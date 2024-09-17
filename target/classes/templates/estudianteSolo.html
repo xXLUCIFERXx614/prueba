@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil del Estudiante</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container my-5">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="text-center">Perfil del Estudiante</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nombre:</strong> <span th:text="${estudiante.nombre}"></span></p>
+                    <p><strong>Apellido:</strong> <span th:text="${estudiante.apellido}"></span></p>
+                    <p><strong>Tipo de Documento:</strong> <span th:text="${estudiante.tipoDoc}"></span></p>
+                    <p><strong>Numero de Documento:</strong> <span th:text="${estudiante.numeroDeCC}"></span></p>
+                    <p><strong>Email:</strong> <span th:text="${estudiante.email}"></span></p>
+                    <p><strong>Telefono:</strong> <span th:text="${estudiante.telefono}"></span></p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Numero de Registro:</strong> <span th:text="${estudiante.numRegistro}"></span></p>
+                    <p><strong>Puntaje General:</strong> <span th:text="${estudiante.puntajeGeneral}"></span></p>
+                    <p><strong>Comunicacion Escrita:</strong> <span th:text="${estudiante.comunicacionEscrita}"></span></p>
+                    <p><strong>Razonamiento Cuantitativo:</strong> <span th:text="${estudiante.razonamientoCuantitativo}"></span></p>
+                    <p><strong>Lectura Critica:</strong> <span th:text="${estudiante.lecturaCritica}"></span></p>
+                    <p><strong>Competencias Ciudadanas:</strong> <span th:text="${estudiante.competenciasCiudadanas}"></span></p>
+                    <p><strong>Ingles:</strong> <span th:text="${estudiante.ingles}"></span></p>
+                    <p><strong>Formulacion de Proyectos:</strong> <span th:text="${estudiante.formulacionProyectos}"></span></p>
+                    <p><strong>Pensamiento Cientifico:</strong> <span th:text="${estudiante.pensamientoCientifico}"></span></p>
+                    <p><strong>Diseño de Software:</strong> <span th:text="${estudiante.diseñoSoftware}"></span></p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/estudiantes" class="btn btn-danger">Atrás</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
